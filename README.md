@@ -11,3 +11,6 @@ This is proof of concept SettlementDistanceCache converter for Bannerlord from v
 
 
 I created this as a Bannerlord mod, because I thought I would need native Bannerlord functions to generate Scene XML CSC and Scene NavMesh CRC. However, for now, those values can be anything - the game reads them but does not check.
+
+
+Compiled version to save you time: https://drive.google.com/file/d/1lt4-AhgQdAsaMwm0N_Ifx2docMm04qnN/view?usp=drive_link :)
