@@ -17,3 +17,8 @@ Compiled version to save you time: https://drive.google.com/file/d/1lt4-AhgQdAsa
 
 
 Also 1.3beta does not properly load the weather picture, so Harmony is necessary to disable rain/snow to avoid crashes. Use this mod with Harmony prefixes to load your map: https://drive.google.com/file/d/1tV0d8KqbQigj9kWVPPp_hb9kE-AMFT1M/view?usp=drive_link (too lazy to create github for this one, use dnSpy to check what it does).
+
+## Crashes
+
+* When SDC is read, each settlementID (from SDC) is used to find the settlement on the map, and those settlements are stored in the internal cache
+* So if settlements do not match in SDC and in Main_map/scene.xscene + settlements.xml -> crash
