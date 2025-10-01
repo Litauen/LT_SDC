@@ -18,6 +18,25 @@ Compiled version to save you time: https://drive.google.com/file/d/1FeKDmAmPWa5J
 
 Also 1.3beta does not properly load the weather picture, so Harmony is necessary to disable rain/snow to avoid crashes. Use this mod with Harmony prefixes to load your map: https://drive.google.com/file/d/1tV0d8KqbQigj9kWVPPp_hb9kE-AMFT1M/view?usp=drive_link (too lazy to create github for this one, use dnSpy to check what it does).
 
+
+## Water
+
+and in the map's xscene file change water section to:
+```
+  <water_properties version="1">
+        <property name="water_level" value="0.630"/>
+        <property name="water_strength" value="2.000"/>
+        <property name="water_wind_dependency" value="1.000"/>
+        <property name="choppiness" value="1.000"/>
+        <property name="water_material" value="water_main_map"/>
+        <property name="water_shallow_color" value="0.006, 0.013, 0.006"/>
+        <property name="water_deep_color" value="0.000, 0.007, 0.017"/>
+        <property name="water_exists" value="true"/>
+        <property name="place_water_probe" value="true"/>
+  </water_properties>
+```
+to have your water back instead of the white fog. Adjust water_level based on your old value
+
 ## Crashes
 
 * When SDC is read, each settlementID (from SDC) is used to find the settlement on the map, and those settlements are stored in the internal cache
